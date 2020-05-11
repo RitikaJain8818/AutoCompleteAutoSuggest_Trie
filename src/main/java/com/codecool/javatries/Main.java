@@ -18,8 +18,10 @@ public class Main {
         for (String word : wordList) {
             ac.addWord(word);
         }
-
-        System.out.println(ac.autoComplete("spectro"));
-        System.out.println("done");
+        List<String> results = ac.autoComplete("heaven");
+        for(String str:results) {
+        	System.out.println(str);
+        }
+        System.out.println("Results Done");
     }
 }
