@@ -10,7 +10,7 @@ public class AutoComplete {
     public AutoComplete() {
         root = new TrieDataNode('-');
     }
-
+//add Word to Trie
     public void addWord(String wordToAdd) {
         TrieDataNode currentNode = root;
         for (char letter : wordToAdd.toCharArray()) {
